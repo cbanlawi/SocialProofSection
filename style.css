@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 1.25rem;
+    background: url(./images/bg-pattern-bottom-mobile.svg);
+    font-family: 'Spartan', sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.title h1,
+.rating h4 {
+    color: hsl(300, 43%, 22%);
+}
+
+.title p {
+    color: hsl(303, 10%, 53%);
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.rating h4 {
+    font-size: 12.5px;
+    margin: 0.5rem 0 0 0;
+}
+
+.rating + .rating {
+    margin-top: 1rem;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+  
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 375px) {
+
+}
