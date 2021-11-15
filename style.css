@@ -4,9 +4,10 @@
 
 body {
     min-height: 100vh;
-    padding: 1.25rem;
+    padding: 2rem 1.125rem 3rem;
     background: url(./images/bg-pattern-bottom-mobile.svg);
     font-family: 'Spartan', sans-serif;
+    font-size: 15px;
 }
 
 .header {
@@ -38,10 +39,53 @@ body {
     margin: 0.5rem 0 0 0;
 }
 
-.rating + .rating {
+.rating + .rating,
+.review + .review {
     margin-top: 1rem;
 }
 
+.reviews {
+    margin-top: 3rem;
+}
+
+.review {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer img {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.name-title h3 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+}
+
+.name-title p {
+    color: hsl(333, 80%, 67%);
+    margin-top: 3px;
+}
+
+.review-info p {
+    color: hsl(300, 24%, 96%);
+    margin-bottom: 0;
+    line-height: 1.6;
+    word-spacing: 1px;
+}
+
+/* @media screen and (min-width: 375px) {
+
+} */
 
 .attribution {
     font-size: 11px;
@@ -50,8 +94,4 @@ body {
   
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-@media screen and (min-width: 375px) {
-
 }
