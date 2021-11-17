@@ -6,6 +6,9 @@ body {
     min-height: 100vh;
     padding: 2rem 1.125rem 3rem;
     background: url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
 }
@@ -83,9 +86,40 @@ body {
     word-spacing: 1px;
 }
 
-/* @media screen and (min-width: 375px) {
-
-} */
+@media screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .title {
+        width: 40%;
+        text-align: left;
+        margin-right: 7.5%;
+    }
+    .ratings {
+        width: 52.5%;
+    }
+    .rating {
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 350px;
+    }
+    .rating h4 {
+        margin: 0;
+    }
+    .rating-1 {
+        align-self: flex-start;
+    }
+    .rating-2 {
+        align-self: center;
+    }
+    .rating-3 {
+        align-self: flex-end;
+    }
+}
 
 .attribution {
     font-size: 11px;
